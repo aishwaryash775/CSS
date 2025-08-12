@@ -1,10 +1,29 @@
-div{
-    background-color: yellow;
+.face {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    border-radius: 50%;
 }
-input{
-    background-color: inherit;
+.mouth {
+    width: 200px;
+    height: 75px;
+    background-color: brown;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
 }
 
-button{
-    background-color: inherit;
+.left-eye,
+.right-eye {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    bottom: 200px;
+}
+.right-eye{
+    left: 170px;
 }
