@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "joshuaregular", sans-serif;
+}
+
+.grid-container{
+     display: grid;
+     grid-auto-columns: 250px;
+     grid-auto-rows: 250px;
+     gap: 1em;
+     grid-template-areas: "box1 box2 box2 box3 "
+                            "box1 box4 box5 box5 ";   
+
+}
+
+@media(max-width:56em){
+    .grid-container{
+        grid-template-areas: "box1 box1 box2"
+                             "box1 box1 box3"
+                             "box4 box5 box5"
+    }
+}
+@media(max-width:42em){
+    .grid-container{
+        grid-template-areas: "box1 box2"
+                             "box3 box2 "
+                             "box3 box4 "
+                             "box5 box4 "
+    }
+}
+.items{
+ background-color: blueviolet;
+}
+    
